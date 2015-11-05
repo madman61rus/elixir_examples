@@ -24,8 +24,8 @@ defmodule Ask do
 
 	def get_distance() do
 		input = IO.gets("How far? (meters) > ")
-		value = String.Sstrip(input)
-		binary_to_integer(value)
+		value = String.strip(input)
+		String.to_integer(value)
 	end
 
 	defp char_to_planemo(char) do
