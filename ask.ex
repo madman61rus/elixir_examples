@@ -17,7 +17,7 @@ defmodule Ask do
 			3. Mars
 			'''
 			)
-		answer = IO.getn("Which? > ")
+		answer = IO.gets("Which? > ")
 		value = String.first(answer)
 		char_to_planemo(value)
 	end	
